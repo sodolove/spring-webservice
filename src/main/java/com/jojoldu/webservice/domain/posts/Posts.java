@@ -1,19 +1,26 @@
 package com.jojoldu.webservice.domain.posts;
 
+import com.jojoldu.webservice.domain.BaseTimeEntity;
 import lombok.AccessLevel;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
-import org.springframework.data.annotation.Id;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+
+/**
+ * Created by jojoldu@gmail.com on 2017. 12. 23.
+ * Blog : http://jojoldu.tistory.com
+ * Github : https://github.com/jojoldu
+ */
 
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 @Getter
 @Entity
-public class Posts {
+public class Posts extends BaseTimeEntity {
 
     @Id
     @GeneratedValue
